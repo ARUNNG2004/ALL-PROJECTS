@@ -1,11 +1,8 @@
-
-a=1
-while a<=5:
-    b=int(input("Enter the number for the getting square"))
+while True:
+    b=int(input("Enter the number for the getting square \n Enter 'q' to Quit"))
+    if b=='q' or b=="Q":
+        break
     def arun(a):
-        return a*a
-
-    result=arun(b)
-    print(result)
-    a=a+1
+        print(a*a)
+    arun(b)
     
